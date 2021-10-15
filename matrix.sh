@@ -11,7 +11,7 @@ clear_screen () {
 }
 
 ctrlc () {
-  kill $(jobs -p) # kill all subprocesses
+  [[ -z "$(jobs -p)" ]] || kill $(jobs -p) # kill all subprocesses
   echo -e "${ESCAPE}2J" # clear screen
   echo -e "${ESCAPE}0M" # reset styles
   echo -e "${ESCAPE}H" # go to 0, 0
