@@ -81,6 +81,12 @@ strings_fall() {
     done
 }
 
+# check if bc is installed
+if ! [ -x "$(command -v bc)" ]; then
+    echo 'Error: bc is not installed. Install it with your package manager.' >&2
+    exit 1
+fi
+
 # catch SIGINT
 trap ctrlc SIGINT
 
