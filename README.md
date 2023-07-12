@@ -1,6 +1,6 @@
 # Shell Matrix
 
-Matrix 4 is coming out soon. *YAY!* 
+Matrix 4 is coming out soon. *YAY!*
 Even tho I'm going to hate that movie, I have (finally) managed to replicate the old feeling of looking at the Matrix to take a look at what our hero Neo is up to.
 
 ## How to use
@@ -10,6 +10,9 @@ Simply download the file from [here](https://github.com/lorossi/shell-matrix/blo
 ![scan this qr to get the code!](matrix.png)
 
 Then, navigate into the folder containing the file and run it from the shell, using the command `./matrix.sh`.
+
+The script requires `bc` to be installed.
+The full version of the script checks for the presence of the program, and if not found it refuses to run until it is installed.
 
 ## How does it work?
 
